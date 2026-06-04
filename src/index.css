@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import './App.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* ── Background & surfaces ── */
+  --bg:           #f8f4ed;   /* lighter parchment cream        */
+  --surface:      #fefcf7;   /* near-white warm cream          */
+  --surface-hover:#f5edd8;   /* soft warm hover                */
+
+  /* ── Borders ── */
+  --border:       #e8d8c0;   /* lighter warm tan               */
+
+  /* ── Text ── */
+  --text-primary:   #332518;  /* warm brown, softer than before  */
+  --text-secondary: #8c7862;  /* muted warm brown               */
+  --text-muted:     #bca898;  /* light warm taupe               */
+
+  /* ── Accent ── */
+  --accent:       #b05f30;   /* warm sienna, slightly lighter  */
+  --accent-hover: #8a4520;   /* deeper on hover                */
+
+  /* ── Misc ── */
+  --tag-bg:       #f0e6d4;   /* lighter cream chip background  */
+  --shadow-sm:    0 1px 3px rgba(80,40,10,0.06);
+  --shadow-md:    0 4px 16px rgba(80,40,10,0.09);
+  --radius:    10px;
+  --radius-sm:  6px;
+}
+
+
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--bg);
+  color: var(--text-primary);
+  font-size: 14px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  cursor: none; /* hide default cursor globally */
+}
+
+a, button, [data-hover] {
+  cursor: none;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  border: none;
+  background: none;
+}
+
+/* Scrollbar */
+.scroll-pane {
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+.scroll-pane::-webkit-scrollbar { width: 4px; }
+.scroll-pane::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+/* ── Custom cursor ── */
+.custom-cursor {
+  position: fixed;
+  top: 0; left: 0;
+  width: 16px; height: 16px;
+  margin: -8px 0 0 -8px;       /* center on tip */
+  border: 1.5px solid rgba(26,26,26,0.55);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 99999;
+  will-change: transform;
+  transition:
+    width  0.35s cubic-bezier(0.22,1,0.36,1),
+    height 0.35s cubic-bezier(0.22,1,0.36,1),
+    margin 0.35s cubic-bezier(0.22,1,0.36,1),
+    background-color 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.custom-cursor.is-hovering {
+  width: 44px; height: 44px;
+  margin: -22px 0 0 -22px;
+  background-color: rgba(61,107,204,0.1);
+  border-color: var(--accent);
+}
+
+.custom-cursor.is-hovering::after {
+  opacity: 0;
+}
+
+/* ── Notebook margin drawing animation ── */
+@keyframes drawVertical {
+  from { transform: scaleY(0); }
+  to   { transform: scaleY(1); }
+}
+@keyframes drawHorizontal {
+  from { transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}
+
+.nb-left {
+  transform-origin: top center;
+  transform: scaleY(0);
+  animation: drawVertical 0.9s cubic-bezier(0.22,1,0.36,1) 0.05s forwards;
+}
+.nb-top {
+  transform-origin: left center;
+  transform: scaleX(0);
+  animation: drawHorizontal 0.9s cubic-bezier(0.22,1,0.36,1) 0.1s forwards;
+}
+
+/* ── Badge pop-in animation ── */
+@keyframes badgePop {
+  0%   { opacity: 0; transform: scale(0.75) translateY(8px); }
+  65%  { transform: scale(1.06) translateY(-2px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.anim-badge {
+  opacity: 0;
+  animation: badgePop 0.6s cubic-bezier(0.22,1,0.36,1) 1.05s forwards;
+}
+
+/* Card hover styling */
+.card-lift {
+  background-color: var(--surface) !important;
+  transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+              box-shadow 0.3s ease,
+              background-color 0.3s ease,
+              border-color 0.3s ease;
+}
+.card-lift:hover {
+  transform: scale(1.008) translateY(-3px) !important;
+  background-color: #f9f1de !important; /* soft cream shade colour change */
+  border-color: rgba(176, 95, 48, 0.38) !important;
+  box-shadow: 0 6px 20px rgba(176, 95, 48, 0.18) !important; /* soft sienna orange glow */
+}
+
+@media (max-width: 768px) {
+  /* Ensure the main browser window can scroll on mobile touch viewports */
+  html, body, #root {
+    overflow: auto !important;
+    height: auto !important;
+  }
+}
