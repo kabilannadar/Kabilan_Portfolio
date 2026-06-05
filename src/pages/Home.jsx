@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
 const NAME = 'Kabilan Rethinaswamy';
 
 export default function Home() {
+  const [avatarHovered, setAvatarHovered] = useState(false);
   return (
     <div
       className="page-enter home-page-container"
@@ -73,15 +75,42 @@ export default function Home() {
           maxWidth: '1200px',
           width: '100%',
           padding: '0 32px',
-          marginTop: '48px',
+          marginTop: '12px',
         }}
       >
         {/* Avatar */}
-        <div className="avatar-container">
+        <div
+          className="avatar-container"
+          onMouseEnter={() => setAvatarHovered(true)}
+          onMouseLeave={() => setAvatarHovered(false)}
+          style={{ cursor: 'pointer' }}
+        >
+          {/* Base avatar image */}
           <img
             src="/avatar.jpg"
             alt="Kabilan Rethinaswamy"
             className="avatar-img"
+            style={{
+              position: 'absolute',
+              objectFit: 'cover',
+              objectPosition: 'center 67%',
+              opacity: avatarHovered ? 0 : 1,
+              transition: 'opacity 0.45s ease',
+            }}
+          />
+          {/* K logo — fades in on hover */}
+          <img
+            src="/K_logo.png"
+            alt=""
+            className="avatar-img"
+            style={{
+              position: 'absolute',
+              objectFit: 'contain',
+              objectPosition: 'center',
+              background: 'var(--surface)',
+              opacity: avatarHovered ? 1 : 0,
+              transition: 'opacity 0.45s ease',
+            }}
           />
         </div>
 
@@ -243,6 +272,42 @@ export default function Home() {
             }}
           >
             LinkedIn
+          </a>
+
+          <span
+            style={{
+              margin: '0 8px',
+              color: 'var(--text-muted)',
+            }}
+          >
+            ·
+          </span>
+
+          <a
+            href="/Kabilan_Rethinaswamy.pdf"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '5px',
+              color: 'var(--accent)',
+              fontWeight: 500,
+            }}
+          >
+            <svg
+              width="13"
+              height="13"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            My Resume
           </a>
         </div>
       </div>
