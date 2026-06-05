@@ -614,17 +614,18 @@
 /* Avatar container styles */
 .avatar-container {
   position: relative;
-  width: 150px;
-  height: 150px;
+  width: 185px;
+  height: 185px;
   margin: 0 auto 28px auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .avatar-img {
-  width: 150px;
-  height: 150px;
+  width: 185px;
+  height: 185px;
   border-radius: 50%;
   object-fit: cover;
   object-position: center 67%; /* Perfectly crops the uploaded portrait to Kabilan's face */

@@ -6,7 +6,8 @@ export default function LeftPanel() {
   const path = location.pathname;
 
   return (
-    <aside className="left-panel animate-in">
+    <aside className="left-panel animate-in" style={{ position: 'relative' }}>
+
       {/* Identity */}
       <div>
         <div className="identity-block">
