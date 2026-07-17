@@ -158,8 +158,8 @@ button {
   box-shadow: 0 6px 20px rgba(176, 95, 48, 0.18) !important; /* soft sienna orange glow */
 }
 
-@media (max-width: 768px) {
-  /* Ensure the main browser window can scroll on mobile touch viewports */
+@media (max-width: 1024px) {
+  /* Ensure the main browser window can scroll on mobile/tablet touch viewports */
   html, body, #root {
     overflow: auto !important;
     height: auto !important;

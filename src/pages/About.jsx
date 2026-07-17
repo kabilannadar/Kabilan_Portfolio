@@ -3,12 +3,14 @@ import PageShell from '../components/PageShell';
 import '../App.css';
 
 const skills = [
-  { group: 'Programming',            tags: ['Python', 'Bash'] },
-  { group: 'Web Frameworks',         tags: ['Flask', 'Django', 'FastAPI'] },
-  { group: 'Databases',              tags: ['MySQL', 'PostgreSQL', 'SQLite', 'MongoDB'] },
-  { group: 'Cloud & Infrastructure', tags: ['AWS EC2', 'AWS S3', 'Lambda', 'VPC', 'IAM', 'CloudWatch'] },
-  { group: 'Systems & Tools',        tags: ['Linux', 'Git', 'GitHub Webhooks'] },
-  { group: 'Core Competencies',      tags: ['Backend Automation', 'API Integration', 'Access Control', 'System Monitoring', 'Data Validation'] },
+  { group: 'Programming',            tags: ['Python', 'JavaScript', 'SQL', 'Bash'] },
+  { group: 'Web Frameworks',         tags: ['FastAPI', 'Flask', 'Django', 'React.js', 'Node.js', 'Next.js'] },
+  { group: 'Databases & Vector',     tags: ['PostgreSQL', 'Neon DB', 'Chroma DB', 'SQLite', 'MongoDB', 'MySQL', 'SQLAlchemy'] },
+  { group: 'Cloud & Deployment',     tags: ['AWS (EC2, S3, VPC, IAM, CloudWatch)', 'Docker', 'Docker Compose', 'Railway', 'Render', 'Vercel', 'Alembic'] },
+  { group: 'Systems & OS',           tags: ['Linux'] },
+  { group: 'APIs & Security',        tags: ['Socket.io / WebSockets', 'Google OAuth', 'JWT Authentication', 'GitHub Webhooks'] },
+  { group: 'Libraries & Tools',      tags: ['Git & GitHub', 'Playwright', 'BeautifulSoup', 'Recharts', 'Groq (LLM)', 'Pandas', 'React Query', 'wweb.js (WhatsApp)'] },
+  { group: 'Core Competencies',      tags: ['Retrieval-Augmented Generation (RAG)', 'REST API Design & Architecture', 'Database Modeling & Schema Design', 'Real-time Event Streaming (SSE)', 'Web Scraping & Data Extraction', 'API Rate Limiting & Security', 'System Monitoring & Logging'] },
 ];
 
 export default function About() {

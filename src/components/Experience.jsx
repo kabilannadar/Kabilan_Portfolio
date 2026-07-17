@@ -2,6 +2,26 @@ import { useRef, useEffect } from 'react'
 
 const jobs = [
   {
+    dot: 'from-[#10b981] to-[#06b6d4]',
+    dotGlow: 'shadow-[0_0_12px_rgba(16,185,129,.5)]',
+    borderHover: 'hover:border-[rgba(16,185,129,.25)]',
+    accent: 'text-[#10b981]',
+    title: 'Python Developer',
+    company: 'ALO Info-Tech',
+    period: 'Jun 2026 – Present',
+    type: 'Full-time',
+    typeColor: 'bg-[rgba(16,185,129,.12)] text-[#6ee7b7] border-[rgba(16,185,129,.2)]',
+    bullets: [
+      'Integrated real-time WebSocket communication channels into web applications using FastAPI and Socket.IO ASGI architectures.',
+      'Developed Retrieval-Augmented Generation (RAG) pipelines with vector search to deliver contextual AI customer support.',
+      'Implemented secure user and agent authentication workflows using Google Sign-In and JWT role authorization.',
+      'Developed interactive administration dashboards using React to interface with real-time backend API services.',
+      'Optimized API throughput and system resilience by implementing custom middleware, rate-limiters, and validation layers.',
+    ],
+    tags: ['FastAPI', 'RAG', 'Chroma DB', 'React', 'Socket.io'],
+    bulletColor: 'text-[#10b981]',
+  },
+  {
     dot: 'from-[#7c3aed] to-[#3b82f6]',
     dotGlow: 'shadow-[0_0_12px_rgba(124,58,237,.5)]',
     borderHover: 'hover:border-[rgba(124,58,237,.25)]',

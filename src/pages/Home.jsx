@@ -7,37 +7,9 @@ const NAME = 'Kabilan Rethinaswamy';
 export default function Home() {
   const [avatarHovered, setAvatarHovered] = useState(false);
   return (
-    <div
-      className="page-enter home-page-container"
-      style={{
-        height: '100vh',
-        width: '100%',
-        overflow: 'hidden',
-        background: 'var(--bg)',
-        position: 'relative',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-      }}
-    >
+    <div className="page-enter home-page-container">
       {/* Navigation */}
-      <nav
-        className="anim-slide-down d-0"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          height: '72px',
-          display: 'flex',
-          flexDirection: 'row',
-          alignItems: 'center',
-          justifyContent: 'center',
-          gap: '28px',
-          zIndex: 10,
-        }}
-      >
+      <nav className="anim-slide-down home-nav d-0">
         {[
           { to: '/projects', label: 'Projects' },
           { to: '/experience', label: 'Experience' },

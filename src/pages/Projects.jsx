@@ -5,6 +5,20 @@ import '../App.css';
 const projects = [
   {
     id: 1,
+    title: 'ExpenseTracker – Personal Finance Platform',
+    image: '/ExpenseTracker_Portfolio_Banner.png',
+    github: 'https://github.com/kabilannadar/ExpenseTracker',
+    stack: ['FastAPI', 'Python', 'Neon DB', 'React.js', 'JWT Authentication', 'wweb.js'],
+    bullets: [
+      'Built with a FastAPI backend, Neon DB database, and a modern React frontend dashboard.',
+      'Easily record, categorize, and filter your daily expenses and income streams in real-time.',
+      'Set custom budgets, track savings goals, and manage upcoming recurring subscriptions or debt EMIs.',
+      'Generate visual charts, audit logging events, and export financial data to external formats.',
+      'Log expenses on the go by texting natural language commands to a connected bot via Whatsapp.',
+    ],
+  },
+  {
+    id: 2,
     title: 'GitHub → JIRA Auto-Ticketing System',
     image: '/github_jira.png',
     github: 'https://github.com/kabilannadar/flask_jira',
@@ -18,7 +32,7 @@ const projects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: 'EnGame – Full Stack Gaming Platform',
     image: '/engame.png',
     github: 'https://github.com/kabilannadar',
