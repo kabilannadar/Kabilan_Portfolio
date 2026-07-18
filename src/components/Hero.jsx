@@ -93,7 +93,7 @@ export default function Hero() {
                  style={{ inset:-8,
                    background:'linear-gradient(135deg,#7c3aed,#06b6d4,#3b82f6)',
                    padding:3 }}/>
-            <img src="/avatar.png" alt="Kabilan Rethinaswamy"
+            <img src="https://ik.imagekit.io/kabi10/avatar.jpg?updatedAt=1784288965603" alt="Kabilan Rethinaswamy"
                  className="rounded-full object-cover relative z-[1] border-[3px] border-[#0d1120]"
                  style={{ width:240, height:240 }}/>
             <div className="absolute bottom-3 right-3 z-[2] w-11 h-11 rounded-full flex items-center justify-center

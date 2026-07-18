@@ -28,7 +28,7 @@ export default function LeftPanel() {
             <a href="https://aloinfotech.in" target="_blank" rel="noreferrer">
               ALO Infotech
             </a>{' '}
-            as a Software Developer, building automation pipelines and backend
+            as a Python Developer, building automation pipelines and backend
             services across Linux environments.
           </p>
 

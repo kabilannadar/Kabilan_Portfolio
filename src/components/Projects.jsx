@@ -1,5 +1,5 @@
 import { useAos } from '../hooks/useAnimations'
-import { GH, GithubCodeIcon, MonitorIcon } from './Icons'
+import { GH, GithubCodeIcon, MonitorIcon, LinkIcon } from './Icons'
 
 const projects = [
   {
@@ -30,6 +30,8 @@ const projects = [
     ],
     link: { href:'https://github.com/kabilannadar/ExpenseTracker', label:'View on GitHub',
             cls:'bg-gradient-to-r from-[#10b981] to-[#06b6d4] text-white hover:shadow-[0_0_30px_rgba(16,185,129,.4)]' },
+    live: { href:'https://expense-tracker-puce-nu-70.vercel.app/', label:'Live Link',
+            cls:'border border-[rgba(16,185,129,.4)] bg-[rgba(16,185,129,.1)] text-[#6ee7b7] hover:bg-[rgba(16,185,129,.2)]' },
   },
   {
     featured: true,
@@ -134,13 +136,20 @@ function ProjectCard({ p }) {
         ))}
       </div>
 
-      {/* link */}
-      <div>
+      {/* links */}
+      <div className="flex flex-wrap gap-3">
         <a href={p.link.href} target="_blank" rel="noopener"
            className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[.85rem] font-semibold
                        transition-all duration-200 hover:scale-105 ${p.link.cls}`}>
           <GH size={16}/> {p.link.label}
         </a>
+        {p.live && (
+          <a href={p.live.href} target="_blank" rel="noopener"
+             className={`inline-flex items-center gap-2 px-5 py-2.5 rounded-full text-[.85rem] font-semibold
+                         transition-all duration-200 hover:scale-105 ${p.live.cls}`}>
+            <LinkIcon size={16}/> {p.live.label}
+          </a>
+        )}
       </div>
 
     </div>

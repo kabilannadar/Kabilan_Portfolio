@@ -59,7 +59,7 @@ export default function Home() {
         >
           {/* Base avatar image */}
           <img
-            src="/avatar.jpg"
+            src="https://ik.imagekit.io/kabi10/avatar.jpg?updatedAt=1784288965603"
             alt="Kabilan Rethinaswamy"
             className="avatar-img"
             style={{
@@ -72,7 +72,7 @@ export default function Home() {
           />
           {/* K logo — fades in on hover */}
           <img
-            src="/K_logo.png"
+            src="https://ik.imagekit.io/kabi10/favicon_portfolio.png"
             alt=""
             className="avatar-img"
             style={{
@@ -149,7 +149,7 @@ export default function Home() {
           >
             ALO Infotech
           </a>{' '}
-          as a Software Developer, building automation pipelines and backend
+          as a Python Developer, building automation pipelines and backend
           services across Linux environments.
         </p>
 
