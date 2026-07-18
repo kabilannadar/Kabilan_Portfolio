@@ -26,45 +26,63 @@ A premium, highly interactive personal portfolio showcasing developer experience
 
 ## 🚀 Key Features
 
-* **Notebook Margin Design:** Custom SVG rules simulating classic binder notebook paper.
-* **Animated Page Transitions:** Re-mounting pages on route transitions for crisp CSS entry/exit animations.
-* **Interactive Projects Grid:** Showcases projects like *ExpenseTracker* with direct source (GitHub) and live demo (Vercel) links.
-* **Custom Interactive Cursor:** Premium trailing cursor implementation with dynamic hover states.
-* **Tailwind & CSS Integration:** Engineered using custom CSS design systems paired with Tailwind utility classes.
-* **Fully Responsive:** Mobile-optimized layout eliminating tap-highlight overlay boxes and securing smooth touch response.
+- **Notebook Margin Design:** Custom SVG rules simulating classic binder notebook paper.
+- **Animated Page Transitions:** Re-mounting pages on route transitions for crisp CSS entry/exit animations.
+- **Interactive Projects Grid:** Showcases projects like _ExpenseTracker_ with direct source (GitHub) and live demo (Vercel) links.
+- **Custom Interactive Cursor:** Premium trailing cursor implementation with dynamic hover states.
+- **Tailwind & CSS Integration:** Engineered using custom CSS design systems paired with Tailwind utility classes.
+- **Fully Responsive:** Mobile-optimized layout eliminating tap-highlight overlay boxes and securing smooth touch response.
 
 ---
 
 ## 🛠️ Tech Stack
 
-* **Core Framework:** React 19, React Router DOM v7
-* **Styling System:** Vanilla CSS, Tailwind CSS
-* **Build System:** Vite
-* **Hosting:** Vercel / CDN-hosted assets (ImageKit.io)
+- **Core Framework:** React 19, React Router DOM v7
+- **Styling System:** Vanilla CSS, Tailwind CSS
+- **Build System:** Vite
+- **Hosting:** Vercel / CDN-hosted assets (ImageKit.io)
 
 ---
 
 ## 📂 Project Structure
 
 ```text
-├── public/                 # Static assets (PDF, SVGs)
+├── public/                     # Public static assets (PDF, SVGs, favicon)
 ├── src/
-│   ├── components/         # Reusable layouts, icons, and components
-│   │   ├── Icons.jsx       # Custom SVG Icons (GH, LI, LinkIcon, etc.)
-│   │   ├── LeftPanel.jsx   # Fixed profile sidebar layout
-│   │   ├── PageShell.jsx   # Page wrapper controls
-│   │   └── CustomCursor.jsx# Interactive custom cursor physics
-│   ├── pages/              # Main route views
-│   │   ├── Home.jsx        # Landing intro screen
-│   │   ├── About.jsx       # Technical skills & background details
-│   │   ├── Projects.jsx    # Projects listing with live preview links
-│   │   └── Experience.jsx  # Structured work history details
-│   ├── App.jsx             # React router configuration
-│   ├── App.css             # Main styling system and layout grids
-│   ├── index.css           # Global typography, colors, and root tokens
-│   └── main.jsx            # React root application entry
-├── index.html              # Main HTML skeleton
-└── vite.config.js          # Vite optimization & dev rules
+│   ├── assets/                 # Local image & icon SVGs
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── components/             # Reusable UI parts & alternative layouts
+│   │   │                       # [Active layout components]:
+│   │   ├── Icons.jsx           # SVG icon components (GitHub, LinkedIn, LinkIcon, etc.)
+│   │   ├── LeftPanel.jsx       # Fixed profile sidebar navigation used in pages
+│   │   ├── PageShell.jsx       # Route transition & layout wrapper
+│   │   ├── CustomCursor.jsx    # Interactive trailing mouse cursor logic
+│   │   │                       # [Alternative/Landing page components]:
+│   │   ├── Navbar.jsx          # Mobile & desktop top navigation bar
+│   │   ├── Hero.jsx            # Interactive intro banner section with avatar
+│   │   ├── About.jsx           # Section layout for biography details
+│   │   ├── Experience.jsx      # Work timeline presentation
+│   │   ├── Projects.jsx        # Alternative Tailwind-based projects grid
+│   │   ├── Skills.jsx          # Categorized skills grid
+│   │   ├── Contact.jsx         # Contact form / connection section
+│   │   ├── Footer.jsx          # Copyright and branding footer
+│   │   └── ParticlesBackground.jsx # Canvas particles background layout
+│   ├── hooks/                  # Custom React hooks
+│   │   └── useAnimations.js    # Scroll reveal (AOS) helper for animations
+│   ├── pages/                  # Active notebook-style page routes
+│   │   ├── Home.jsx            # Main bio and landing hub
+│   │   ├── About.jsx           # Detail of technical skills & competencies
+│   │   ├── Projects.jsx        # Projects card layout with Live Link integration
+│   │   └── Experience.jsx      # Notebook sheet timeline of work history
+│   ├── App.jsx                 # React Router routing setup & main frame lines
+│   ├── App.css                 # Custom page animations and notebook layouts CSS
+│   ├── index.css               # Global typography, color tokens, and scrollbar CSS
+│   └── main.jsx                # React DOM render entrypoint
+├── eslint.config.js            # Linter rules configuration
+├── index.html                  # Core HTML skeleton
+├── package.json                # Project dependencies and scripting rules
+└── vite.config.js              # Vite compiler & local bundler settings
 ```
 
 ---
@@ -74,22 +92,26 @@ A premium, highly interactive personal portfolio showcasing developer experience
 Follow these steps to set up and run the portfolio locally:
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/kabilannadar/Kabilan_Portfolio.git
 cd Kabilan_Portfolio
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Start Development Server
+
 ```bash
 npm run dev
 ```
 
 ### 4. Build for Production
+
 ```bash
 npm run build
 ```
@@ -98,7 +120,7 @@ npm run build
 
 ## 📬 Contact & Connect
 
-* **Email:** [r.r.kabilan0435@gmail.com](mailto:r.r.kabilan0435@gmail.com)
-* **Phone:** [+91-9022879379](tel:+919022879379)
-* **LinkedIn:** [Kabilan Nadar](https://linkedin.com/in/kabilan-nadar-9738a823a)
-* **GitHub:** [@kabilannadar](https://github.com/kabilannadar)
+- **Email:** [r.r.kabilan0435@gmail.com](mailto:r.r.kabilan0435@gmail.com)
+- **Phone:** [+91-9022879379](tel:+919022879379)
+- **LinkedIn:** [Kabilan Nadar](https://linkedin.com/in/kabilan-nadar-9738a823a)
+- **GitHub:** [@kabilannadar](https://github.com/kabilannadar)
