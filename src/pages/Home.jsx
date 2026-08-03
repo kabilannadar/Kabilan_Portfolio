@@ -137,20 +137,7 @@ export default function Home() {
             marginBottom: '20px',
           }}
         >
-          I currently work at{' '}
-          <a
-            href="https://aloinfotech.in/"
-            target="_blank"
-            rel="noreferrer"
-            style={{
-              color: 'var(--accent)',
-              fontWeight: 500,
-            }}
-          >
-            ALO Infotech
-          </a>{' '}
-          as a Python Developer, building automation pipelines and backend
-          services across Linux environments.
+          I am currently seeking new opportunities as a Backend &amp; Cloud Developer.
         </p>
 
         {/* Contact */}

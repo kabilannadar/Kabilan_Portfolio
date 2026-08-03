@@ -24,12 +24,7 @@ export default function LeftPanel() {
           </p>
 
           <p className="bio-text">
-            I currently work at{' '}
-            <a href="https://aloinfotech.in" target="_blank" rel="noreferrer">
-              ALO Infotech
-            </a>{' '}
-            as a Python Developer, building automation pipelines and backend
-            services across Linux environments.
+            I am currently seeking new opportunities as a Backend &amp; Cloud Developer.
           </p>
 
           <Link to="/about" className="read-more-link">

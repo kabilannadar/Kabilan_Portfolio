@@ -15,7 +15,7 @@ const projects = [
       'Easily record, categorize, and filter your daily expenses and income streams in real-time.',
       'Set custom budgets, track savings goals, and manage upcoming recurring subscriptions or debt EMIs.',
       'Generate visual charts, audit logging events, and export financial data to external formats.',
-      'Log expenses on the go by texting natural language commands to a connected bot via Whatsapp.',
+      'Log expenses on the go by texting natural language commands to a connected bot via WhatsApp.',
     ],
   },
   {

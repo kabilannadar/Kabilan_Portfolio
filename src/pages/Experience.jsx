@@ -4,18 +4,6 @@ import '../App.css';
 
 const experiences = [
   {
-    role: 'Python Developer',
-    company: 'ALO Info-Tech',
-    period: 'Jun 2026 – Present',
-    bullets: [
-      'Integrated real-time WebSocket communication channels into web applications using FastAPI and Socket.IO ASGI architectures.',
-      'Developed Retrieval-Augmented Generation (RAG) pipelines with vector search to deliver contextual AI customer support.',
-      'Implemented secure user and agent authentication workflows using Google Sign-In and JWT role authorization.',
-      'Developed interactive administration dashboards using React to interface with real-time backend API services.',
-      'Optimized API throughput and system resilience by implementing custom middleware, rate-limiters, and validation layers.',
-    ],
-  },
-  {
     role: 'Software Developer',
     company: 'Aurify Systems Pvt. Ltd.',
     period: 'Mar 2025 – Dec 2025',

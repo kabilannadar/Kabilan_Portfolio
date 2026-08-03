@@ -25,7 +25,7 @@ export default function About() {
             <div className="about-section anim-fade-up pd-1">
               <h3>Background</h3>
               <p className="bio-text" style={{ marginBottom: '12px' }}>
-                I'm a Backend &amp; Cloud Developer based in Nagercoil, Tamil Nadu, with a strong
+                I'm a Backend &amp; Cloud Developer based in Chennai, Tamil Nadu, with a strong
                 foundation in Python, Linux systems, and cloud-native architectures on AWS.
               </p>
               <p className="bio-text" style={{ marginBottom: '12px' }}>
