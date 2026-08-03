@@ -8,14 +8,14 @@ const projects = [
     title: 'ExpenseTracker – Personal Finance Platform',
     image: 'https://ik.imagekit.io/kabi10/ExpenseTracker_Portfolio_Banner.png',
     github: 'https://github.com/kabilannadar/ExpenseTracker',
-    live: 'https://expense-tracker-puce-nu-70.vercel.app/',
+    live: 'https://expensetrackertn.vercel.app/',
     stack: ['FastAPI', 'Python', 'Neon DB', 'React.js', 'JWT Authentication', 'wweb.js'],
     bullets: [
       'Built with a FastAPI backend, Neon DB database, and a modern React frontend dashboard.',
       'Easily record, categorize, and filter your daily expenses and income streams in real-time.',
       'Set custom budgets, track savings goals, and manage upcoming recurring subscriptions or debt EMIs.',
       'Generate visual charts, audit logging events, and export financial data to external formats.',
-      'Log expenses on the go by texting natural language commands to a connected bot via WhatsApp.',
+      'Log expenses on the go by texting natural language commands to a connected bot via Telegram.',
     ],
   },
   {
