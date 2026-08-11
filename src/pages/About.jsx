@@ -5,12 +5,12 @@ import '../App.css';
 const skills = [
   { group: 'Programming',            tags: ['Python', 'JavaScript', 'SQL', 'Bash'] },
   { group: 'Web Frameworks',         tags: ['FastAPI', 'Flask', 'Django', 'React.js', 'Node.js', 'Next.js'] },
-  { group: 'Databases & Vector',     tags: ['PostgreSQL', 'Neon DB', 'Chroma DB', 'SQLite', 'MongoDB', 'MySQL', 'SQLAlchemy'] },
+  { group: 'Databases & ORM',     tags: ['PostgreSQL', 'Neon DB', 'ChromaDB', 'SQLite', 'MongoDB', 'MySQL', 'SQLAlchemy'] },
   { group: 'Cloud & Deployment',     tags: ['AWS (EC2, S3, VPC, IAM, CloudWatch)', 'Docker', 'Docker Compose', 'Railway', 'Render', 'Vercel', 'Alembic'] },
-  { group: 'Systems & OS',           tags: ['Linux'] },
-  { group: 'APIs & Security',        tags: ['Socket.io / WebSockets', 'Google OAuth', 'JWT Authentication', 'GitHub Webhooks'] },
-  { group: 'Libraries & Tools',      tags: ['Git & GitHub', 'Playwright', 'BeautifulSoup', 'Recharts', 'Groq (LLM)', 'Pandas', 'React Query', 'wweb.js (WhatsApp)'] },
-  { group: 'Core Competencies',      tags: ['Retrieval-Augmented Generation (RAG)', 'REST API Design & Architecture', 'Database Modeling & Schema Design', 'Real-time Event Streaming (SSE)', 'Web Scraping & Data Extraction', 'API Rate Limiting & Security', 'System Monitoring & Logging'] },
+  { group: 'Systems & OS',           tags: ['Linux', 'Cron Jobs'] },
+  { group: 'APIs & Authentication',        tags: ['Socket.io / WebSockets', 'Google OAuth', 'JWT Authentication', 'Resend (Email API)', 'Bcrypt', 'Cryptography', 'GitHub Webhooks'] },
+  { group: 'Libraries & Tools',      tags: ['Git & GitHub', 'PyTorch', 'Hugging Face', 'Sentence Transformers', 'Pytest', 'Pydantic', 'Playwright', 'Driver.js', 'DDGS (DuckDuckGo Search)', 'BeautifulSoup', 'Groq (LLM)', 'Recharts', 'Pandas', 'React Query'] },
+  { group: 'Core Competencies',      tags: ['Retrieval-Augmented Generation (RAG)', 'Vector Embeddings & Semantic Search', 'Progressive Web Apps (PWA)', 'REST API Design & Architecture', 'Database Modeling & Schema Design', 'Real-time Event Streaming (SSE)', 'Web Scraping & Data Extraction', 'API Rate Limiting & Security', 'System Monitoring & Logging'] },
 ];
 
 export default function About() {

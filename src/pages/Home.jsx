@@ -55,7 +55,6 @@ export default function Home() {
           className="avatar-container"
           onMouseEnter={() => setAvatarHovered(true)}
           onMouseLeave={() => setAvatarHovered(false)}
-          style={{ cursor: 'pointer' }}
         >
           {/* Base avatar image */}
           <img

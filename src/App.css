@@ -704,13 +704,6 @@
     height: auto !important;
   }
 
-  /* Hide custom cursor and restore native cursor on mobile touchscreens */
-  .custom-cursor {
-    display: none !important;
-  }
-  body, a, button, [data-hover] {
-    cursor: auto !important;
-  }
 
   /* Hide decorative notebook lines on mobile/tablet to maximize content area */
   .nb-left, .nb-top {

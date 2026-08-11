@@ -5,21 +5,37 @@ import '../App.css';
 const projects = [
   {
     id: 1,
-    title: 'ExpenseTracker – Personal Finance Platform',
-    image: 'https://ik.imagekit.io/kabi10/ExpenseTracker_Portfolio_Banner.png',
-    github: 'https://github.com/kabilannadar/ExpenseTracker',
+    title: 'MoneyCommandAI Assistant',
+    image: 'https://ik.imagekit.io/kabi10/MoneyCommandAI_Chatbot_Banner.png',
+    imagePosition: 'center 20%',
+    github: 'https://github.com/kabilannadar/MoneyCommandAI-Assistant',
     live: 'https://expensetrackertn.vercel.app/',
-    stack: ['FastAPI', 'Python', 'Neon DB', 'React.js', 'JWT Authentication', 'wweb.js'],
+    stack: ['Python', 'FastAPI', 'LLM', 'RAG', 'ChromaDB', 'Hugging Face', 'Embeddings', 'Prompt Engineering'],
     bullets: [
-      'Built with a FastAPI backend, Neon DB database, and a modern React frontend dashboard.',
-      'Easily record, categorize, and filter your daily expenses and income streams in real-time.',
-      'Set custom budgets, track savings goals, and manage upcoming recurring subscriptions or debt EMIs.',
-      'Generate visual charts, audit logging events, and export financial data to external formats.',
-      'Log expenses on the go by texting natural language commands to a connected bot via Telegram.',
+      'Built a conversational finance assistant using intent detection, prompt engineering, and LLM integration to interpret user queries and provide context-aware responses.',
+      'Developed a retrieval-augmented generation pipeline using document ingestion, embeddings, ChromaDB vector search, and contextual prompting to ground responses in relevant knowledge.',
+      'Implemented a real-time agent-user support system with session management, message routing, connection state, and live support workflows.',
+      'Designed separate authentication and authorization flows for users, support agents, and administrators, with role-based access control and centralized configuration.',
+      "Integrated the assistant as the intelligence layer behind ExpenseTracker's in-app chatbot and Telegram bot, enabling natural-language interaction with features such as expenses, budgets, EMIs, goals, reminders and much more.",
     ],
   },
   {
     id: 2,
+    title: 'ExpenseTracker – Personal Finance Platform',
+    image: 'https://ik.imagekit.io/kabi10/ExpenseTracker_Portfolio_Banner.png',
+    github: 'https://github.com/kabilannadar/ExpenseTracker',
+    live: 'https://expensetrackerbykabs.vercel.app/',
+    stack: ['FastAPI', 'Python', 'Neon DB', 'React.js', 'JWT Authentication'],
+    bullets: [
+      'Full-stack personal finance web app with React + FastAPI, tracking expenses, income, budgets, EMIs, loans, savings, debts, goals, and subscriptions.',
+      'MoneyCommandAI Assistant — an integrated AI chatbot enabling users to log and query financial transactions through natural language conversations.',
+      'Telegram bot integration lets users log transactions via natural language messages like "Coffee 80 upi" synced instantly to the dashboard.',
+      'Automated notifications send Telegram and email alerts for budget overruns, EMI due dates, subscription renewals, and scheduled reminders.',
+      'PWA-enabled installable on Android, iOS, and desktop as a standalone app with offline support via a custom Service Worker.'
+    ],
+  },
+  {
+    id: 3,
     title: 'GitHub → JIRA Auto-Ticketing System',
     image: 'https://ik.imagekit.io/kabi10/github_jira.png?updatedAt=1784288964924',
     github: 'https://github.com/kabilannadar/flask_jira',
@@ -33,7 +49,7 @@ const projects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: 'EnGame – Full Stack Gaming Platform',
     image: 'https://ik.imagekit.io/kabi10/engame.png?updatedAt=1784288966249',
     github: 'https://github.com/kabilannadar',
@@ -59,7 +75,7 @@ export default function Projects() {
             <div key={p.id} className={`anim-fade-up pd-${i + 1}`}>
               <div className="project-card card-lift">
                 <div className="project-card-thumb" style={{ height: '180px', aspectRatio: 'auto' }}>
-                  <img src={p.image} alt={p.title} />
+                  <img src={p.image} alt={p.title} style={{ objectPosition: p.imagePosition || 'center' }} />
                 </div>
                 <div style={{ padding: '20px 22px' }}>
                   <div className="project-card-header">

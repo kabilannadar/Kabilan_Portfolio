@@ -5,7 +5,17 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hide default native cursor on all devices with mouse hover capability (desktops/laptops) */
+@media (hover: hover) and (pointer: fine) {
+  html, body, #root,
+  a, button, input, textarea, select,
+  span, div, p, li, h1, h2, h3, h4, h5, h6,
+  img, svg, label, iframe,
+  *, *::before, *::after {
+    cursor: none !important;
+  }
 }
 
 :focus:not(:focus-visible) {
@@ -54,11 +64,6 @@ body {
   font-size: 14px;
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
-  cursor: none; /* hide default cursor globally */
-}
-
-a, button, [data-hover] {
-  cursor: none;
 }
 
 a {
@@ -86,34 +91,57 @@ button {
 .scroll-pane::-webkit-scrollbar { width: 4px; }
 .scroll-pane::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
-/* ── Custom cursor ── */
+/* ── Custom Apple-style fluid cursor ── */
 .custom-cursor {
   position: fixed;
   top: 0; left: 0;
-  width: 16px; height: 16px;
-  margin: -8px 0 0 -8px;       /* center on tip */
-  border: 1.5px solid rgba(26,26,26,0.55);
+  width: 20px; height: 20px;
+  margin: -10px 0 0 -10px;       /* center on cursor coordinate */
+  background-color: transparent;
+  border: 1.5px solid rgba(176, 95, 48, 0.65);
   border-radius: 50%;
   pointer-events: none;
-  z-index: 99999;
-  will-change: transform;
+  z-index: 999999;
+  opacity: 0;
+  will-change: transform, width, height, margin, background-color, border-color, box-shadow;
+  overflow: hidden;
   transition:
-    width  0.35s cubic-bezier(0.22,1,0.36,1),
-    height 0.35s cubic-bezier(0.22,1,0.36,1),
-    margin 0.35s cubic-bezier(0.22,1,0.36,1),
-    background-color 0.35s ease,
-    border-color 0.35s ease;
+    opacity 0.2s ease,
+    width  0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    height 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    margin 0.32s cubic-bezier(0.22, 1, 0.36, 1),
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+/* Styling for the magnifying lens inside the custom cursor */
+.custom-cursor-lens-wrapper {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  will-change: transform;
+}
+
+a, button, .contact-pill {
+  transition: color 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
 }
 
 .custom-cursor.is-hovering {
-  width: 44px; height: 44px;
-  margin: -22px 0 0 -22px;
-  background-color: rgba(61,107,204,0.1);
+  width: 48px; height: 48px;
+  margin: -24px 0 0 -24px;
+  background-color: var(--bg); /* Solid color to block out original text underneath */
   border-color: var(--accent);
+  box-shadow: 0 0 16px rgba(176, 95, 48, 0.22);
 }
 
-.custom-cursor.is-hovering::after {
-  opacity: 0;
+/* Hide custom cursor on touchscreens */
+@media (hover: none) and (pointer: coarse) {
+  .custom-cursor {
+    display: none !important;
+  }
 }
 
 /* ── Notebook margin drawing animation ── */
