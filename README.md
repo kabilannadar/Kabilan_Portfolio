@@ -1,4 +1,4 @@
-# 📂 Personal Portfolio | Kabilan Rethinaswamy
+# Personal Portfolio | Kabilan Rethinaswamy
 
 <p align="center">
   <img src="https://ik.imagekit.io/kabi10/favicon_portfolio.png" alt="Logo" width="80" height="80" />
@@ -37,17 +37,20 @@ This repository hosts my **Personal Portfolio Website**—a premium, interactive
 ## 🛠️ Tech Stack & Skills
 
 ### 💻 Core Programming & Web
+
 - **Languages:** Python, JavaScript, SQL, Bash
 - **Web Frameworks:** FastAPI, Flask, Django, React.js, Node.js, Next.js
 - **APIs & Real-Time:** REST APIs, Socket.io / WebSockets, Event Streaming (SSE), GitHub Webhooks
 
 ### ☁️ Cloud & Systems
+
 - **AWS Infrastructure:** EC2, S3, VPC, IAM, CloudWatch
 - **DevOps & Containers:** Docker, Docker Compose, Git & GitHub
 - **Deployment & Tooling:** Railway, Render, Vercel, Alembic
 - **Systems:** Linux, Cron Jobs
 
 ### 🧠 Database & AI
+
 - **Databases:** PostgreSQL, Neon DB, SQLite, MongoDB, MySQL, SQLAlchemy
 - **AI & RAG:** Retrieval-Augmented Generation (RAG), ChromaDB, Hugging Face, Sentence Transformers, LLMs (Groq), Prompt Engineering
 
@@ -56,33 +59,36 @@ This repository hosts my **Personal Portfolio Website**—a premium, interactive
 ## 🚀 Featured Projects
 
 ### 🤖 [MoneyCommandAI Assistant](https://github.com/kabilannadar/MoneyCommandAI-Assistant)
-*Conversational finance support assistant integrated as the AI support layer.*
+
+_Conversational finance support assistant integrated as the AI support layer._
+
 - Built an intent-driven finance helper using FastAPI, Groq LLM, and prompt engineering.
 - Created a **RAG pipeline** using ChromaDB vector database and Hugging Face sentence embeddings.
 - Developed a **Socket.IO** real-time support queue allowing users to escalate to live human support agents.
 
 ### 💳 [ExpenseTracker – Personal Finance Platform](https://github.com/kabilannadar/ExpenseTracker)
-*Full-stack web application tracking personal cash flows, budgets, and automation alerts.*
+
+_Full-stack web application tracking personal cash flows, budgets, and automation alerts._
+
 - Managed backend routing on React + FastAPI using Neon DB for multi-tenant budgeting.
 - Built a **Telegram bot** that allows logging transactions via natural language messages (e.g. `Coffee 80 upi`) synced live.
 - Enabled automatic notification reminders via Telegram/email for EMIs, goals, and budgets.
 - Engineered a **Progressive Web App (PWA)** with offline service workers for mobile installation.
 
 ### 🔗 [GitHub → JIRA Auto-Ticketing System](https://github.com/kabilannadar/flask_jira)
-*Automated DevOps ticketing connector between VCS and agile workspaces.*
+
+_Automated DevOps ticketing connector between VCS and agile workspaces._
+
 - Deployed a Flask REST API on **AWS EC2** with role-based IAM configurations.
 - Integrated GitHub Webhook events with the JIRA API to synchronize tickets in real-time.
 - Automated system auditing using **AWS CloudWatch** logs and dashboard metrics.
-
-### 🎮 [EnGame – Full Stack Gaming Platform](https://github.com/kabilannadar)
-- Co-developed a multi-member game library portal using React.js, Next.js, and Node.js.
-- Implemented user registration and authorization schemes using **OAuth** and MongoDB.
 
 ---
 
 ## 🎨 Portfolio Website Features
 
 The portfolio website itself is built using a custom **notebook rule-lined paper layout** with a premium hand-drawn feel.
+
 - **Notebook Paper Grid:** Custom CSS rule-lined sheets simulating classic notebook paper.
 - **Animated Route Re-mounts:** Clean CSS entry/exit animations on page transitions.
 - **Trailing Cursor:** Dynamic hover trailing custom cursor.
@@ -133,22 +139,26 @@ The portfolio website itself is built using a custom **notebook rule-lined paper
 Follow these steps to set up and run the portfolio locally:
 
 ### 1. Clone the Repository
+
 ```bash
 git clone https://github.com/kabilannadar/Kabilan_Portfolio.git
 cd Kabilan_Portfolio
 ```
 
 ### 2. Install Dependencies
+
 ```bash
 npm install
 ```
 
 ### 3. Start Development Server
+
 ```bash
 npm run dev
 ```
 
 ### 4. Build for Production
+
 ```bash
 npm run build
 ```
