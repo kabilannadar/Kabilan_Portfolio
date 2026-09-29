@@ -4,7 +4,7 @@ import '../App.css';
 
 const experiences = [
   {
-    role: 'Software Developer',
+    role: 'Technical Support Coordinator - Python Automation',
     company: 'Aurify Systems Pvt. Ltd.',
     period: 'Mar 2025 – Dec 2025',
     bullets: [
@@ -16,7 +16,7 @@ const experiences = [
     ],
   },
   {
-    role: 'Software Developer Intern',
+    role: 'Web Administrator - Python Data Processing',
     company: 'Sellergize Web Technologies Pvt. Ltd.',
     period: 'Jul 2024 – Nov 2024',
     bullets: [

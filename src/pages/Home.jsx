@@ -120,8 +120,8 @@ export default function Home() {
             marginBottom: '8px',
           }}
         >
-          Backend &amp; Cloud Developer with hands-on experience building and
-          deploying Python-based automation systems on AWS.
+          Backend &amp; AI Developer with hands-on experience building and
+          deploying Python-based automation systems.
           <br />
           Clarity and reliability are the two guiding principles of my work.
         </p>
@@ -136,7 +136,7 @@ export default function Home() {
             marginBottom: '20px',
           }}
         >
-          I am currently seeking new opportunities as a Backend &amp; Cloud Developer.
+          I am currently seeking new opportunities as a Backend &amp; AI Developer.
         </p>
 
         {/* Contact */}
@@ -221,7 +221,7 @@ export default function Home() {
           </span>
 
           <a
-            href="https://linkedin.com/in/kabilan-nadar-9738a823a"
+            href="https://www.linkedin.com/in/kabilan-rethinaswamy-9738a823a/"
             target="_blank"
             rel="noreferrer"
             style={{

@@ -96,6 +96,7 @@ const skillGroups = [
       { label:'Web Scraping & Data Extraction',      cls:'bg-[rgba(20,184,166,.15)] text-[#5eead4] border-[rgba(20,184,166,.25)]' },
       { label:'API Rate Limiting & Security',        cls:'bg-[rgba(20,184,166,.15)] text-[#5eead4] border-[rgba(20,184,166,.25)]' },
       { label:'System Monitoring & Logging',         cls:'bg-[rgba(20,184,166,.15)] text-[#5eead4] border-[rgba(20,184,166,.25)]' },
+      { label:'Computer Vision',                     cls:'bg-[rgba(20,184,166,.15)] text-[#5eead4] border-[rgba(20,184,166,.25)]' },
     ],
   },
 ]

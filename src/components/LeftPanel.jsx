@@ -13,18 +13,18 @@ export default function LeftPanel() {
         <div className="identity-block">
           <div className="name">Kabilan Rethinaswamy</div>
           <div className="roles">
-            Backend&nbsp;<span>|</span>&nbsp;Cloud&nbsp;<span>|</span>&nbsp;Python
+            Backend&nbsp;<span>|</span>&nbsp;Python&nbsp;<span>|</span>&nbsp;AI&nbsp;<span>|</span>&nbsp;Cloud
           </div>
 
           <p className="bio-text">
-            Backend &amp; Cloud Developer with hands-on experience building and
-            deploying Python-based automation systems on AWS. Designed REST-driven
-            integrations using Flask, EC2, and CloudWatch to eliminate manual
+            Backend &amp; AI Developer with hands-on experience building and
+            deploying Python-based automation systems. Designed REST-driven
+            integrations using AWS Services to eliminate manual
             workflows and improve operational efficiency.
           </p>
 
           <p className="bio-text">
-            I am currently seeking new opportunities as a Backend &amp; Cloud Developer.
+            I am currently seeking new opportunities as a Backend &amp; AI Developer.
           </p>
 
           <Link to="/about" className="read-more-link">

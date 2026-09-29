@@ -10,7 +10,7 @@ const skills = [
   { group: 'Systems & OS',           tags: ['Linux', 'Cron Jobs'] },
   { group: 'APIs & Authentication',        tags: ['Socket.io / WebSockets', 'Google OAuth', 'JWT Authentication', 'Resend (Email API)', 'Bcrypt', 'Cryptography', 'GitHub Webhooks'] },
   { group: 'Libraries & Tools',      tags: ['Git & GitHub', 'PyTorch', 'Hugging Face', 'Sentence Transformers', 'Pytest', 'Pydantic', 'Playwright', 'Driver.js', 'DDGS (DuckDuckGo Search)', 'BeautifulSoup', 'Groq (LLM)', 'Recharts', 'Pandas', 'React Query'] },
-  { group: 'Core Competencies',      tags: ['Retrieval-Augmented Generation (RAG)', 'Vector Embeddings & Semantic Search', 'Progressive Web Apps (PWA)', 'REST API Design & Architecture', 'Database Modeling & Schema Design', 'Real-time Event Streaming (SSE)', 'Web Scraping & Data Extraction', 'API Rate Limiting & Security', 'System Monitoring & Logging'] },
+  { group: 'Core Competencies',      tags: ['Retrieval-Augmented Generation (RAG)', 'Vector Embeddings & Semantic Search', 'Progressive Web Apps (PWA)', 'REST API Design & Architecture', 'Database Modeling & Schema Design', 'Computer Vision', 'Real-time Event Streaming (SSE)', 'Web Scraping & Data Extraction', 'API Rate Limiting & Security', 'System Monitoring & Logging'] },
 ];
 
 export default function About() {
@@ -25,7 +25,7 @@ export default function About() {
             <div className="about-section anim-fade-up pd-1">
               <h3>Background</h3>
               <p className="bio-text" style={{ marginBottom: '12px' }}>
-                I'm a Backend &amp; Cloud Developer based in Chennai, Tamil Nadu, with a strong
+                I'm a Backend &amp; AI Developer based in Chennai, Tamil Nadu, with a strong
                 foundation in Python, Linux systems, and cloud-native architectures on AWS.
               </p>
               <p className="bio-text" style={{ marginBottom: '12px' }}>
